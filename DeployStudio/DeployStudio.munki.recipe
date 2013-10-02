@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads latest Deploy Studio disk image.</string>
+    <key>Identifier</key>
+    <string>com.github.jcip02.autopkg.munki.DeployStudio</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>DeployStudio</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>servertools</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>Saving time is a daily concern for system administrators, especially with the increase of minor interventions requested by end-users: accidentally modified system preferences, third-party applications instability or misconfigured, wrong access rights, viruses, etc... OS X is stable and robust but the capacity to (re)install completely a workstation or a server in a few minutes following a preset workflow that automatically restores the right disk image, configures and backs up what was planned by the administrator is a real benefit in terms of time and money. DeployStudio was designed this way, in order to manage flawlessly large deployments of workstations, servers and cluster nodes.</string>
+            <key>display_name</key>
+            <string>DeployStudio</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.jcip02.autopkg.download.DeployStudio</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
