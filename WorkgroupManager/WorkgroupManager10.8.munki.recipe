@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest Workgroup Manager disk image for 10.8.</string>
+    <string>Downloads the latest version of Attachment Tamer by Lokiware.</string>
     <key>Identifier</key>
-    <string>com.github.jcip02.autopkg.munki.WorkgroupManager.10.8</string>
+    <string>com.github.jcip02.autopkg.download.attachmenttamer</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>WorkgroupManager10.8</string>
+        <string>AttachmentTamer</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>servertools</string>
+        <string>plugins</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,9 +19,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>To manage client preferences with OS X Server, use Workgroup Manager 10.8 on OS X Mountain Lion.</string>
+            <string>Attachment Tamer gives you control over attachment handling in Apple Mail. It fixes the most annoying Apple Mail flaws, ensures compatibility with other email software, and allows you to set up how attachments are displayed and sent.</string>
             <key>display_name</key>
-            <string>Workgroup Manager 10.8</string>
+            <string>Attachment Tamer</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -31,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.jcip02.autopkg.download.WorkgroupManager.10.8</string>
+    <string>com.github.jcip02.autopkg.download.attachmenttamer</string>
     <key>Process</key>
     <array>
         <dict>
