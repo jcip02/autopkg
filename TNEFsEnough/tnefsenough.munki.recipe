@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>tnefsenough</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>utilites</string>
+        <string>utilities</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
